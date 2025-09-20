@@ -1,0 +1,5 @@
+#!/bin/sh
+# .git/hooks/pre-push
+# Push to Google Apps Script only if there are staged or committed changes
+
+scripts/push-dev.sh
