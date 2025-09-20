@@ -69,18 +69,20 @@ This repository is a **starter template** for managing a Google Apps Script proj
 ## 🧩 Project structure
 
 ```text
-.githooks/          # version-controlled Git hooks
-  pre-push          # runs clasp push to DEV
-scripts/            # helper scripts
-  init-ids.sh       # set your real DEV/PROD Script IDs
-  push-dev.sh       # push code to DEV
-  promote-to-prod.sh# promote code to PROD safely
-  gas-diff.sh       # compare two GAS projects
-src/                # your Apps Script source files
-  Code.gs           # starter code (hello world)
-.clasp.dev.json     # DEV config (with placeholder Script ID)
-.clasp.prod.json    # PROD config (with placeholder Script ID)
-.gitignore          # ignores .clasp.json and build artifacts
+.githooks/            # version-controlled Git hooks
+  pre-push            # runs clasp push to DEV
+scripts/              # helper scripts
+  init-ids.sh         # set your real DEV/PROD Script IDs
+  init-hooks.sh       # configure git to use .githooks/ as hooksPath
+  push-dev.sh         # push code to DEV
+  promote-to-prod.sh  # promote code to PROD safely
+  release.sh          # create annotated release tags and push
+  gas-diff.sh         # compare two GAS projects
+src/                  # your Apps Script source files
+  Code.gs             # starter code (hello world)
+.clasp.dev.json       # DEV config (with placeholder Script ID)
+.clasp.prod.json      # PROD config (with placeholder Script ID)
+.gitignore            # ignores .clasp.json and build artifacts
 ```
 
 ## 📦 Why use this template?
