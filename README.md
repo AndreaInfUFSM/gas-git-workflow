@@ -32,35 +32,41 @@ This repository is a **starter template** for managing a Google Apps Script proj
 
 ---
 
-## 🚀 Getting started
+## 🚀 How to use this template
 
-1. Clone this template:
+This repository is set up as a **GitHub Template**. To start a new Google Apps Script project with this workflow:
+
+1. On the repo page, click the green **“Use this template”** button (top-right).
+
+2. Choose **“Create a new repository”**, give it a name, and pick visibility (public/private).
+
+3. Clone your new repo:
    ```bash
-   git clone <url> my-gas-project
-   cd my-gas-project
+   git clone https://github.com/<your-org>/<your-new-repo>.git
+   cd <your-new-repo>
    ```
 
-2. Install clasp and log in:
+4. Install [clasp](https://github.com/google/clasp?tab=readme-ov-file#install) and log in:
    ```bash
    npx @google/clasp login --no-localhost
    ```
 
-3. Initialize your Script IDs:
+5. Initialize your Script IDs:
    ```bash
    ./scripts/init-ids.sh  # enters DEV and PROD IDs once and saves them into the JSON configs
    ```
 
-4. Enable versioned hooks:
+6. Enable versioned hooks:
    ```bash
    ./scripts/install-hooks.sh
    ```
 
-5. Push to DEV (automatically via pre-push) or manually:
+7. Push to DEV (automatically via pre-push) or manually:
    ```bash
    ./scripts/push-dev.sh
    ```
 
-6. Release to PROD when ready:
+8. Release to PROD when ready:
    ```bash
    ./scripts/release.sh
    ```
